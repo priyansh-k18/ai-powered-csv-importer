@@ -148,3 +148,6 @@ app.post('/api/upload', upload.single('file'), async (req, res) => {
 app.listen(port, () => {
   console.log(`Backend running on port ${port}`);
 });
+
+// Export the Express API for Vercel
+module.exports = app;
